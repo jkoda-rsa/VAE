@@ -11,17 +11,18 @@ class VariationalAutoencoder(nn.Module):
 
 
         self.dec = nn.Sequential(
+            nn.Dropout(0.05),
             nn.Linear(latent_size, hidden_size),
             nn.Linear(hidden_size, hidden_size * 2),
             nn.Linear(hidden_size * 2, input_size)
         )
 
     def encode(self, x):
-        x = nn.Dropout(0.25)(x)
+        x = nn.Dropout(0.1)(x)
         x = self.fc1(x)
-        x = nn.Dropout(0.25)(x)
+        x = nn.Dropout(0.1)(x)
         x = self.fc2(x)
-        x = nn.Dropout(0.25)(x)
+        x = nn.Dropout(0.1)(x)
         return self.mu(x), self.log_var(x)
 
     def decode(self, z):
