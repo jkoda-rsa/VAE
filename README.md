@@ -19,3 +19,6 @@ Die Schritte 1-4 werden in diesem Repository als Mini-Projekt erläutert.
 
 Folgende Links sind sehr hilfreich bei der Entwicklung:
 
+Layers, Activation functions, regularization: (https://pytorch.org/docs/stable/nn.html)
+
+Optimizers (Modell-Parameter Optimierung): (https://pytorch.org/docs/stable/optim.html)
