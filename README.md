@@ -1,6 +1,6 @@
 # pytorch_helper
 
-## Vorgehen für Erstellen von Pytorch Modellen (universales Vorgehen)
+## Vorgehen für das Erstellen von Pytorch Modellen (universales Vorgehen)
 
 1. **Dataloader** erstellen (Klasse um Daten zu laden für Train/Evaluierung/Testing vom Modell): e.g. (_datareaders.py_)
 2. **Architektur (Modell) erstellen** (Layers, Activation-Funktions, Regularization): e.g. (_variational_autoencoder.py_)
